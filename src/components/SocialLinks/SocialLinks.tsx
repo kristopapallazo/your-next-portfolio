@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { socialLinks } from "../../data/portfolio";
-// import { Github, Linkedin, Mail, Gitlab } from "lucide-react";
 
 const SocialLinks: FC<{ type?: number }> = ({ type = 1 }) => {
   let className;

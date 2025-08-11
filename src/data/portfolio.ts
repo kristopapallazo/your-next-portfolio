@@ -2,18 +2,6 @@ import { Github, Gitlab, Linkedin, Mail } from "lucide-react";
 import { Project, Experience, Skill, SocialLink } from "../types";
 
 export const projects: Project[] = [
-  // {
-  //   id: 0,
-  //   title: "EV Charger ",
-  //   description:
-  //     "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-  //   image:
-  //     "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   technologies: ["React", "TypeScript", "Node.js"],
-  //   githubUrl: "https://github.com",
-  //   liveUrl: "https://ch-app-lts-update.vercel.app",
-  //   featured: true,
-  // },
   {
     id: 1,
     title: "E-Commerce Platform",
@@ -134,18 +122,18 @@ export const skills: Skill[] = [
 export const socialLinks: SocialLink[] = [
   {
     icon: Github,
-    href: "https://github.com/kristopapallazo",
+    href: "https://github.com/",
     label: "GitHub",
   },
   {
     icon: Gitlab,
-    href: "https://gitlab.com/kristopapallazo",
+    href: "https://gitlab.com/",
     label: "GitLab",
   },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/kristopapallazo",
+    href: "https://linkedin.com/in/",
     label: "LinkedIn",
   },
-  { icon: Mail, href: "mailto:papallazo.dev@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:test@gmail.com", label: "Email" },
 ];

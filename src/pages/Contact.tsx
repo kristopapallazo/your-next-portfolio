@@ -1,17 +1,10 @@
 import { FC, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Github,
-  Linkedin,
-  Twitter,
-} from "lucide-react";
+import { Send } from "lucide-react";
 import Card from "../components/UI/Card";
 import Button from "../components/UI/Button";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
+import { socialLinks } from "../data/portfolio";
 
 const Contact: FC = () => {
   const [formData, setFormData] = useState({
@@ -37,33 +30,6 @@ const Contact: FC = () => {
     // Reset form
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
-
-  const contactInfo = [
-    {
-      icon: Mail,
-      title: "Email",
-      value: "papallazo.dev@gmail.com",
-      href: "mailto:hello@alexjohnson.dev",
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+46 720 25 25 32",
-      href: "tel:+15551234567",
-    },
-    {
-      icon: MapPin,
-      title: "Location",
-      value: "Tirana, Albania",
-      href: "#",
-    },
-  ];
-
-  const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  ];
 
   return (
     <div className="py-20 bg-dark-900 min-h-screen">
@@ -189,22 +155,22 @@ const Contact: FC = () => {
                 Contact Information
               </h2>
               <div className="space-y-6">
-                {contactInfo.map((info) => (
-                  <div key={info.title} className="flex items-center">
+                {socialLinks.map((info) => (
+                  <div key={info.label} className="flex items-center">
                     <div className="w-12 h-12 bg-russian-green-900/30 rounded-lg flex items-center justify-center mr-4 border border-russian-green-700">
                       <info.icon className="w-6 h-6 text-russian-green-400" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-white">{info.title}</h3>
+                      <h3 className="font-semibold text-white">{info.label}</h3>
                       {info.href !== "#" ? (
                         <a
                           href={info.href}
                           className="text-gray-300 hover:text-russian-green-400 transition-colors"
                         >
-                          {info.value}
+                          {info.href}
                         </a>
                       ) : (
-                        <span className="text-gray-300">{info.value}</span>
+                        <span className="text-gray-300">{info.href}</span>
                       )}
                     </div>
                   </div>

@@ -1,10 +1,10 @@
-// import React from "react";
+import { FC } from "react";
 import { motion } from "framer-motion";
 import { Code2, Palette, Zap, Users } from "lucide-react";
 import Card from "../components/UI/Card";
 import { skills } from "../data/portfolio";
 
-const About: React.FC = () => {
+const About: FC = () => {
   const skillCategories = {
     frontend: skills.filter((skill) => skill.category === "frontend"),
     backend: skills.filter((skill) => skill.category === "backend"),
@@ -17,25 +17,25 @@ const About: React.FC = () => {
       icon: Code2,
       title: "Clean Code",
       description:
-        "I believe in writing maintainable, scalable code that stands the test of time.",
+        "Committed to writing maintainable and scalable code for long-term success.",
     },
     {
       icon: Palette,
-      title: "Design Focus",
+      title: "User-Centered Design",
       description:
-        "Great user experience starts with thoughtful design and attention to detail.",
+        "Believes great applications start with intuitive and thoughtful design.",
     },
     {
       icon: Zap,
       title: "Performance",
       description:
-        "Optimizing for speed and efficiency to deliver the best user experience.",
+        "Focused on delivering fast, efficient, and smooth user experiences.",
     },
     {
       icon: Users,
-      title: "Collaboration",
+      title: "Team Collaboration",
       description:
-        "Working effectively with teams to bring ideas to life and solve problems.",
+        "Values teamwork and open communication to build better solutions together.",
     },
   ];
 
@@ -49,10 +49,12 @@ const About: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center mb-16"
         >
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">About Me</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            About John Doe
+          </h1>
           <p className="text-xl text-gray-300 leading-relaxed">
-            I'm a passionate full-stack developer with over 5 years of
-            experience creating digital solutions that make a difference.
+            Experienced developer passionate about building modern, scalable web
+            applications that deliver real value.
           </p>
         </motion.div>
 
@@ -63,8 +65,8 @@ const About: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Profile"
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="John Doe"
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
             />
           </motion.div>
@@ -77,20 +79,20 @@ const About: React.FC = () => {
           >
             <h2 className="text-3xl font-bold text-white">My Journey</h2>
             <p className="text-gray-300 leading-relaxed">
-              My journey into web development started during my computer science
-              studies, where I discovered my passion for creating interactive
-              experiences. Since then, I've worked with startups and established
-              companies, helping them build scalable web applications.
+              My journey in development began during my studies, where I
+              discovered a passion for crafting digital experiences. Over the
+              years, I've worked with startups and enterprises, building
+              solutions that scale and perform.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I specialize in React, TypeScript, and Node.js, but I'm always
-              eager to learn new technologies. When I'm not coding, you can find
-              me contributing to open source projects, writing technical
-              articles, or exploring the latest in web development.
+              I specialize in modern JavaScript frameworks like React and
+              backend technologies such as Node.js. Outside of coding, I enjoy
+              contributing to open-source projects and keeping up with emerging
+              web trends.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I believe in the power of technology to solve real-world problems
-              and create meaningful experiences for users.
+              I believe technology should empower users and solve real problems
+              through elegant design and efficient code.
             </p>
           </motion.div>
         </div>
@@ -107,11 +109,11 @@ const About: React.FC = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              What Drives Me
+              Core Values
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              These are the principles that guide my work and approach to
-              development.
+              These principles guide how I approach software development and
+              teamwork.
             </p>
           </motion.div>
 

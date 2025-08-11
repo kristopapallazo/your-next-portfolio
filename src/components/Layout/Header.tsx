@@ -44,7 +44,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <Code2 className="w-8 h-8 text-russian-green-500 group-hover:text-russian-green-400 transition-colors" />
             <span className="text-xl font-bold text-white group-hover:text-russian-green-400 transition-colors">
-              Papallazo.dev
+              YourNextPortfolio
             </span>
           </Link>
 

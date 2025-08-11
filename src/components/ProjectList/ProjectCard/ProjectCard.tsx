@@ -1,48 +1,49 @@
-import { FC, memo, useCallback, useEffect, useState } from "react";
+import { FC, memo /* useCallback, useEffect, useState */ } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import Card from "../../UI/Card";
 import { Project } from "../../../types";
 import Button from "../../UI/Button";
-import mql from "@microlink/mql";
+// import mql from "@microlink/mql";
 
 const ProjectCard: FC<{ project: Project }> = memo(({ project }) => {
-  const { liveUrl } = project;
+  // const { liveUrl } = project;
 
-  const [preview, setPreview] = useState<string | null>(null);
+  // const [preview, setPreview] = useState<string | null>(null);
 
-  const onFetchPreview = useCallback(async () => {
-    try {
-      if (!liveUrl) throw new Error("Live URL is not provided!");
+  // const onFetchPreview = useCallback(async () => {
+  //   try {
+  //     if (!liveUrl) throw new Error("Live URL is not provided!");
 
-      const res = await mql(liveUrl, { screenshot: true });
-      console.log("res", res);
-      if (
-        !res ||
-        res.statusCode !== 200 ||
-        !res.data ||
-        !res?.data?.screenshot?.url
-      ) {
-        throw new Error("Failed to fetch preview image!");
-      }
-      //   const blob = await res.blob();
-      const preview = res?.data?.screenshot?.url;
-      if (!preview) throw new Error("Preview image URL is not available!");
-      setPreview(preview);
-    } catch (error) {
-      console.error("Error fetching project preview:", error);
-      setPreview(null);
-    }
-  }, [liveUrl]);
+  //     const res = await mql(liveUrl, { screenshot: true });
+  //     console.log("res", res);
+  //     if (
+  //       !res ||
+  //       res.statusCode !== 200 ||
+  //       !res.data ||
+  //       !res?.data?.screenshot?.url
+  //     ) {
+  //       throw new Error("Failed to fetch preview image!");
+  //     }
+  //     //   const blob = await res.blob();
+  //     const preview = res?.data?.screenshot?.url;
+  //     if (!preview) throw new Error("Preview image URL is not available!");
+  //     setPreview(preview);
+  //   } catch (error) {
+  //     console.error("Error fetching project preview:", error);
+  //     setPreview(null);
+  //   }
+  // }, [liveUrl]);
 
-  useEffect(() => {
-    onFetchPreview();
-  }, [onFetchPreview]);
+  // useEffect(() => {
+  //   onFetchPreview();
+  // }, [onFetchPreview]);
 
   return (
     <Card className="h-full flex flex-col">
       <div className="aspect-video overflow-hidden">
         <img
-          src={preview || project?.image}
+          src={project?.image}
+          // src={preview || project?.image}
           //   src={project.image}
           alt={project.title}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"

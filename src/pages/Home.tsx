@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   const onResumeDownload = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Kristo_Papallazo_Resume.pdf";
+    link.download = "My_Resume.pdf";
     link.click();
   };
 
@@ -46,12 +46,12 @@ const Home: React.FC = () => {
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-russian-green-400 to-russian-green-600 bg-clip-text text-transparent">
-                  Kristo Papallazo
+                  John Doe
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed">
-                Full-Stack Developer passionate about creating beautiful,
-                scalable web experiences that make a difference.
+                Developer dedicated to building clean, scalable, and
+                user-focused web applications.
               </p>
             </motion.div>
 
