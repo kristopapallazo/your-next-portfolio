@@ -1,38 +1,31 @@
 # Your Next Portfolio
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This template provides a clean and professional way to showcase your projects, experience, and skills.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-## 🌐 Live Demo
+## Live Demo
 
-**Production URL:** [https://your-next-portfolio.vercel.app/](https://your-next-portfolio.vercel.app/)
+**Production:** [https://your-next-portfolio.vercel.app/](https://your-next-portfolio.vercel.app/)
 
-## ✨ Features
+## Features
 
-- **Modern Tech Stack**: Built with React 18, TypeScript, and Vite for fast development and optimal performance
-- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
-- **Smooth Animations**: Enhanced user experience with Framer Motion animations
-- **Multiple Sections**:
-  - Home - Landing page with introduction
-  - About - Personal information and skills
-  - Projects - Showcase your work with detailed project cards
-  - Experience - Professional experience timeline
-  - Contact - Get in touch section
-- **Customizable**: Easy to modify content through centralized data files
-- **Type-Safe**: Full TypeScript support for better development experience
-- **Modern UI**: Clean design with Tailwind CSS and Lucide icons
+- Modern tech stack with React 18, TypeScript, and Vite
+- Responsive design
+- Smooth animations with Framer Motion
+- Multiple sections: Home, About, Projects, Experience, Contact
+- Type-safe with TypeScript
+- Styled with Tailwind CSS
 
-## 🚀 Tech Stack
+## Tech Stack
 
-- **Frontend Framework**: React 18.3.1
-- **Language**: TypeScript 5.5.3
-- **Build Tool**: Vite 5.4.2
-- **Styling**: Tailwind CSS 3.4.1
-- **Routing**: React Router DOM 7.7.1
-- **Animations**: Framer Motion 12.23.12
-- **Icons**: Lucide React 0.344.0
-- **Linting**: ESLint 9.9.1
+- React 18.3.1
+- TypeScript 5.5.3
+- Vite 5.4.2
+- Tailwind CSS 3.4.1
+- React Router DOM 7.7.1
+- Framer Motion 12.23.12
+- Lucide React 0.344.0
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -52,14 +45,14 @@ npm run dev
 
 4. Open your browser and visit `http://localhost:5173`
 
-## 🛠️ Available Scripts
+## Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint to check code quality
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 your-next-portfolio/
@@ -83,7 +76,7 @@ your-next-portfolio/
 └── vite.config.ts       # Vite configuration
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Update Your Information
 
@@ -106,29 +99,8 @@ Edit the portfolio data in `src/data/portfolio.ts` to add your:
 2. Add the route in `src/App.tsx`
 3. Update navigation in `src/components/Layout/Header.tsx`
 
-## 🚀 Deployment
+## Deployment
 
-This project is optimized for deployment on [Vercel](https://vercel.com):
+Deployed on [Vercel](https://vercel.com). The build process automatically detects Vite configuration.
 
-1. Push your code to a Git repository (GitHub, GitLab, etc.)
-2. Import the project in Vercel
-3. Vercel will automatically detect Vite and configure the build settings
-4. Deploy!
-
-You can also deploy to other platforms like Netlify, GitHub Pages, or any static hosting service.
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-## 📧 Contact
-
-Feel free to reach out if you have any questions or suggestions!
-
----
-
-Made with ❤️ using React, TypeScript, and Tailwind CSS
+Can also be deployed to Netlify, GitHub Pages, or any static hosting service.
